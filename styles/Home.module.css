@@ -1,0 +1,30 @@
+.w-100{
+  width: 90%;
+}
+
+.logo{
+  width: auto;
+  height: 150px;
+  object-fit: contain;
+  object-position: center;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card,
+  .footer {
+    border-color: rgb(255, 169, 169);
+  }
+  .code {
+    background: rgb(255, 254, 254);
+  }
+  .logo img {
+    filter: invert(1);
+  }
+}
